@@ -8,4 +8,9 @@ The address is divided into four parts. The first part is District Number. It is
 
 The main hashing of location is done in the forth part. 
 Here we find the distance between given coordinates and nearest landmark. After that,  we use BASE64 encoded vegenere ciphers to encrypt the distance. 
-After that, the distance and the degree between two points: the chosen nearest landmark and the desired co-ordinate point is calculated. The calculated distance and degree are converted into BASE-64 to shorten the length of the resulting values. Then, the shortened values are encoded with the help of vegenere cipher. Then, the combination of district, city, landmark and encoded values gives the required combination. i.e xxx-xxx-xxxxxxxxxxxx-xx-xx format
+After that, the distance and the degree between two points: the chosen nearest landmark and the desired co-ordinate point is calculated. The calculated distance and degree are converted into BASE-64 to shorten the length of the resulting values. Then, the shortened values are encoded with the help of vegenere cipher. Then, the combination of district, city, landmark and encoded values gives the required combination. i.e xxx-xxx-xxxxxxxxxxxx-xx-xx format.
+
+## Required Libraries
+-math
+-folium
+-MarkerCluster
